@@ -1,0 +1,58 @@
+$x=100;
+var_dump ($x);
+for($x=0;$x<=100;$x++)
+{
+	echo  $x ;
+}
+$grade=34;
+if ($grade>=85 && $grade<=100)
+{
+	echo"A+";
+}
+else if ($grade>=70 &&$grade<=80)
+{
+	echo "B+";
+}
+else if ($grade>=65&&$grade<=50)
+{
+	echo "C+";
+}
+else {
+	echo "F .<hr/>";
+}
+for ($i=1; $i<251;$i++)
+if ($i!=147)
+{
+		echo $i;
+}
+echo "<hr/>";
+for ($i=0; $i<=500;$i++)	
+if ($i%5==0){
+	echo $i;
+}echo "<hr/>";
+$i=0;
+while($i<251){
+	$i++;
+	if ($i!=147)
+	if ($i%5==0)
+		echo $i;
+} echo "<hr>";
+$films=array("fast","pre","avatar","presti");
+$keyword="avatar";
+foreach ($films as $film){
+	if ($film==$keyword){
+		echo "find";
+		break;
+	}
+}
+
+$films=array("fast","pre","avatar","presti");
+for($i=count($films)-1;$i>=0;$i--){
+	echo $films[$i];
+} echo "<hr/>";
+$tests=array(5,4,9,3,1,7,5,8,6);
+$sum=0;
+foreach($tests as $test){
+	$sum+=$test;
+}
+echo"sum=".$sum;
